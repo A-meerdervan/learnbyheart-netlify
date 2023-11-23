@@ -512,13 +512,13 @@
 	.select-wrapper {
 	border: none;
 	border-bottom: 2px solid #ccc;
-	padding: 8px 12px;
+	padding: 8px 0px;
 	font-size: 17px;
 	font-weight: bold;
 	color: #333;
 	cursor: pointer;
 	transition: border-bottom-color 0.3s ease;
-	font-family: 'Roboto Slab', serif;
+	/* font-family: 'Roboto Slab', serif; */
 	}
 
 	/* Make the more info box have a nice orange border */
@@ -541,11 +541,11 @@
 
 </style>
 
-<h1>Learn AI facts by heart</h1>
+<h1>Learn cool facts by heart</h1>
 <!-- Only show the intro text and dataset selector dropdown at the start in pageFase 0-->
 {#if pageFase == 0}  
 	<p>
-		This page lets you interactively learn a ton about AI in a way that makes sure you remember most of it! Much more effective than just reading! We created sets of questions about the past and present of AI. You will be asked a question, when you do not know the answer you have a chance to learn from seeing the answer. And you wil be tested later again to see whether you know it by heart. The questions are chosen at random but they have a weight associated with it. The higher the weight the greater the chance it wil be asked again. When you answer correctly the weight goes down and when you answer incorrectly the weight goes up. The goal is to reduce the weight of all the questions to 0 so that you have demonstrated that today you know it all by heart. It works wonders for remembering, but memory can fade so we invite you to try again some time later!   
+		This page lets you interactively learn a ton about AI, and learn the capitals of the world in a way that makes sure you remember most of it! Much more effective than just reading! You will be asked a question, when you do not know the answer you have a chance to learn from seeing the answer. And you wil be tested later again to see whether you know it by heart. The questions are chosen at random but they have a weight associated with it. The higher the weight the greater the chance it wil be asked again. When you answer correctly the weight goes down and when you answer incorrectly the weight goes up. The goal is to reduce the weight of all the questions to 0 so that you have demonstrated that today you know it all by heart. It works wonders for remembering, but memory can fade so we invite you to try again some time later!   
 	</p>
 	<!-- <select on:change={handleDatasetChange} class="select-wrapper">
 		<option value=0>Click here to select a subject</option>
@@ -598,7 +598,7 @@ the start index is never higher or the same as the stopindex.:) -->
 	{/each}
 </select>
   
-<p>Your selected set from question {startIndex} to {stopIndex}, is {stopIndex - startIndex + 1} questions long <br><br><strong>Consider writing down your start and end numbers, so you know what not to enter next time.</strong><br><br>GOTTA LEARN THEM ALL! :D  </p>
+<p>Your selected set from question {startIndex} to {stopIndex}, is {stopIndex - startIndex + 1} questions long <br><br><strong>Consider writing down your start and end numbers, so you know what not to enter next time.</strong><br><br>Knowledge is power!  </p>
 
 <button on:click={handleStart} class="custom-button">
 	Start
