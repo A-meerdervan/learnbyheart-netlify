@@ -41,7 +41,7 @@
 	const newQuestionsMessage = 'Now asking ' + nrOfNewQuestions.toString() +  ' or less new questions'
 	let datasetsHaveLoaded = false;
 	// The file is at /static/learn.. but in svelte the static folder contents are available without having to start with /static 
-	let pathToData = 'learnbyheart_Data/aifacts.txt'
+	let pathToData = 'learnbyheart_Data/allfacts.txt'
 
 	let endMessage = 'You are at the end, the only option now is to hit restart or refresh the page for the same effect'
 
@@ -268,6 +268,9 @@
 			showPrevContext = true;
 			lastQuestion = 'Previous: ' + currentEntry.question;
 			lastContext = currentEntry.context;
+			if (lastContext == ''){
+				lastContext = "I am still looking for a volunteer to add cool context for this set"
+			}
 			// const [notYetAsked, alreadyAsked, weights, nrOfZeros] = getScoresAndIndexes(dataset);
 			[notYetAsked, alreadyAsked, weights, nrOfZeros] = getScoresAndIndexes(dataset);
 			count += 1;
@@ -539,6 +542,17 @@
   	margin-left: 10px; /* Adjust the margin as needed */
 	}
 
+	#backtoselectionbtn {
+		display: block;
+		background-color: #333;
+	}
+
+	#backtoselectionbtn:hover {
+		background-color: #ff7700;
+	}
+
+
+
 </style>
 
 <h1>Learn cool facts by heart</h1>
@@ -602,6 +616,10 @@ the start index is never higher or the same as the stopindex.:) -->
 
 <button on:click={handleStart} class="custom-button">
 	Start
+</button>
+
+<button on:click={handleRestart} class="custom-button" id="backtoselectionbtn">
+	Back to subject selection
 </button>
 
 {/if}
@@ -670,11 +688,12 @@ the start index is never higher or the same as the stopindex.:) -->
 	<p class=more-info>
 		<strong>More info on the previous one</strong><br><br>
 		{@html lastContext}
+		
 	</p>
 	{/if}
 
 	<button on:click={handleRestart} class="custom-button">
-		Restart
+		Back to subject selection
 	</button>
 </div>
 {/if}

@@ -1,4 +1,4 @@
-subset;Fun and important AI facts
+subset;AI, fun and important facts
 
 How many “parameters” does the human brain have?;1000 trillion;”On average, the human brain contains about 100 billion neurons [...]. Each neuron may be connected to up to 10,000 other neurons, passing signals to each other via as many as 1,000 trillion synapses. In the nervous system, a synapse is a structure that permits a neuron to pass an electrical or chemical signal to another neuron or to the target effector cell.” This was taken from <a href="https://arxiv.org/abs/1906.01703#:~:text=On%20average%2C%20the%20human%20brain,many%20as%201%2C000%20trillion%20synapses">this paper</a>. In deep learning, we talk about how many parameters an AI model has. The brain is not an exact analogy to AI models, but the parameters are mainly the weights of the connections between artificial neurons. You could understand this as the connection strength. Conceptually, for example, the neuron that detects a car has a strong connection to the neuron that detects a wheel. GPT-4 has 1.8 trillion parameters, which is 0.2% of the “parameter” count of the human brain. Which is really, really close, only 500 times increase and the counts are equal. Note that we do not know the minimal parameter count for a superintelligence, it could be lower than the number of synapses in the brain.
 
@@ -22,7 +22,7 @@ What is the last name of the AI professor that quit his job at Google to be able
 
 What is the last name of the first head of state to take AI existential risk seriously and take action?;Sunak;In 2023 the prime minister of the UK, Rishi Sunak, met with DeepMind, OpenAI and Anthropic CEO’s. Taken from <a href="https://www.theguardian.com/technology/2023/may/25/no-10-acknowledges-existential-risk-ai-first-time-rishi-sunak">this Guardian piece</a>: “The PM and CEOs discussed the risks of the technology, ranging from disinformation and national security, to existential threats […] The PM set out how the approach to AI regulation will need to keep pace with the fast-moving advances in this technology”. The UK is organizing a summit on AI safety in 2023 and has started the Foundation model taskforce, that has gotten a 100 million pound budget to increase AI safety, led by Ian Hogarth, the author of the influential and recommended Financial Times piece titled: <a href="https://www.ft.com/content/03895dc4-a3b7-481e-95cc-336a524f2ac2">We must slow down the race to god-like AI</a>. Sadly, Sunak talks of acceleration, not slow-down. 
 
-subset;Learn key figures through quotes
+subset;AI, learn key figures through quotes
 
 Quote by whom?: Can we just stop rushing ahead long into what seems like through very basic reasoning to be probably an apocalypse?;Miles;July 2023, Robert Miles, legendary AI safety YouTuber with more than 140k subscribers, said this on the Futurati podcast <a href = "https://youtu.be/r-SmqbqIiXk?t=4888">found here on YouTube</a>. Find his videos on this website on <a href="/learn">the learn page</a>. 
 
@@ -55,7 +55,7 @@ Quote by whom?: From AI's perspective in 2-3 years from now, we look more like p
 Quote by whom?: Why didn't I think about it before? Why didn't Geoffrey Hinton think about it before? [...] I believe there's a psychological effect that still may be at play for a lot of people. [...] It's very hard, in terms of your ego and feeling good about what you do, to accept the idea that the thing you've been working on for decades might be actually be very dangerous to humanity. [...] I think that I didn't want to think too much about it, and that's probably the case for others;Bengio;AI professor Yoshua Bengio said this in a July 2023 <a href="https://www.youtube.com/watch?v=0RknkWgd6Ck&t=961s&ab_channel=EyeonAI">YouTube interview found here</a>. Bengio is a deep learning pioneer and winner of the Turing Award. He is one of the most prominent figures that has signed the influential <a href="https://futureoflife.org/open-letter/pause-giant-ai-experiments/">open letter calling for a pause</a> in early 2023. We also recommend watching <a href="https://www.youtube.com/watch?v=144uOfr4SYA">the Munk Debate</a> on whether AI is or is not an existential risk, with Bengio, Tegmark, LeCun and Mitchell. If you want to read more about the psychology of existential risk consider reading <a href="https://pauseai.info/psychology-of-x-risk">this piece written by PauseAI founder Joep Meindertsma</a>.
 
 Quote by whom?: If we are not careful, we might be trapped behind a curtain of illusions, which we could not tear away, or even realize is there;Harari;History professor and best-selling author Yuval Noah Harari (known from the book Sapiens) said this in April 2023.  Harari “argues that AI has hacked the operating system of human civilization. Storytelling computers will change the course of human history, says the historian and philosopher”. <a href="https://www.economist.com/by-invitation/2023/04/28/yuval-noah-harari-argues-that-ai-has-hacked-the-operating-system-of-human-civilisation">Paywalled source here</a>. Harari signed the <a href="https://futureoflife.org/open-letter/pause-giant-ai-experiments/">FLI open letter calling for a pause</a> of AI development of models more powerful than GPT-4, and has been doing a lot of public talks on the risks of AI in the first half of 2023. 
-subset;Captials of South Amerika
+subset;Capitals of South Amerika
 What is the capital of Argentina?;Buenos Aires;
 What is the capital of Bolivia?;Sucre;
 What is the capital of Brazil?;Brasilia;
@@ -71,7 +71,7 @@ What is the capital of Peru?;Lima;
 What is the capital of Suriname?;Paramaribo;
 What is the capital of Uruguay?;Montevideo;
 What is the capital of Venezuela?;Caracas;
-subset;Captials of North and Central Amarika and the Caribean
+subset;Capitals of North and Central Amarika and the Caribean
 What is the capital of Antigua and Barbuda?;Saint John's;
 What is the capital of The Bahamas;Nassau;
 What is the capital of Barbados?;Bridgetown;
@@ -93,7 +93,7 @@ What is the capital of Saint Lucia?;Castries;
 What is the capital of Saint Vincent and the Grenadines?;Kingstown;
 What is the capital of Trinidad and Tobago?;Port-of-Spain;
 What is the capital of The United States of America?;Washington D.C.;
-subset;Captials of Europe
+subset;Capitals of Europe
 What is the capital of Albania?;Tirana;
 What is the capital of Andorra?;Andorra la Vella;
 What is the capital of Armenia?;Yerevan;
@@ -196,7 +196,7 @@ What is the capital of United Arab Emirates?;Abu Dhabi;
 What is the capital of Uzbekistan?;Tashkent;
 What is the capital of Vietnam?;Hanoi;
 What is the capital of Yemen?;Sanaa;
-subset;Capital of Afrika
+subset;Capitals of Afrika
 What is the capital of Algeria?;Algiers;
 What is the capital of Angola?;Luanda;
 What is the capital of Benin?;Porto-Novo;
