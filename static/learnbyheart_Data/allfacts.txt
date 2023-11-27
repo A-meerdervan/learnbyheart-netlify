@@ -62,8 +62,6 @@ What is the capital of Brazil?;Brasilia;
 What is the capital of Chile?;Santiago;
 What is the capital of Colombia?;Bogota;
 What is the capital of Ecuador?;Quito;
-What is the capital of El Salvador?;San Salvador;
-What is the capital of Guatemala?;Guatemala;
 What is the capital of French Guiana?;Cayenne;
 What is the capital of Guyana?;Georgetown;
 What is the capital of Paraguay?;Asuncion;
@@ -71,7 +69,9 @@ What is the capital of Peru?;Lima;
 What is the capital of Suriname?;Paramaribo;
 What is the capital of Uruguay?;Montevideo;
 What is the capital of Venezuela?;Caracas;
-subset;Capitals of North and Central Amarika and the Caribean
+subset;Capitals of North & Central Amarika & the Caribean
+What is the capital of El Salvador?;San Salvador;
+What is the capital of Guatemala?;Guatemala;
 What is the capital of Antigua and Barbuda?;Saint John's;
 What is the capital of The Bahamas;Nassau;
 What is the capital of Barbados?;Bridgetown;

@@ -39,6 +39,7 @@
 	let nrOfZeros = 0;
 	const nrOfNewQuestions = 5; // number of NEW questions in a streak, after that it reaskes the latest mistakes
 	const newQuestionsMessage = 'Now asking ' + nrOfNewQuestions.toString() +  ' or less new questions'
+	const allAlreadyAskedMessage = 'All questions have been asked once, now the higher the incorrect streak, the more often it will be asked.'
 	let datasetsHaveLoaded = false;
 	// The file is at /static/learn.. but in svelte the static folder contents are available without having to start with /static 
 	let pathToData = 'learnbyheart_Data/allfacts.txt'
@@ -80,9 +81,10 @@
 				ques = ques.trim()
 				ans = ans.trim();
 				cont = cont.trim()
+				let incorrectStrk = 0; // this is added to keep track of the incorrect streak, bit ugly to put it here since it is not data, it is a quick fix, sorry
 				// All weights are set to -1 to start with. Later it will be updated depending on how many mistakes on has made or correct answers.
 				const weight = -1;
-				datasets[datasetIndex].push({ question:ques, answer:ans, weight:weight,context:cont });
+				datasets[datasetIndex].push({ question:ques, answer:ans, weight:weight,context:cont,incorrectStreak:incorrectStrk });
 			}
 		}
 		// Add the list of subset names as the last position in the datasets list of lists. 
@@ -138,18 +140,18 @@
 		let newWeight;
 	
 		if (wasMistake) {
-			if (curWeight === -1) {
+			if (curWeight === -1) { 		// Wrong for the very first time? weight at 3
 				newWeight = 3;
-			} else if (curWeight >= 1) {
+			} else if (curWeight >= 1) {    // Wrong multiple times? Keep increasing the weight so the more wrong, the more often in will return again.
 				newWeight = curWeight + 2;
 			} else if (curWeight === 0.5 || curWeight === 0.25 || curWeight === 0) {
 				newWeight = 3;
 			}
 		} else { // if correct!
-			if (curWeight === -1) {
+			if (curWeight === -1) {   		// Correct frist time? newWeight to 1 (3 correct more to go to reach 0 weight)
 				newWeight = 1;
-			} else if (curWeight >= 3) {
-				newWeight = curWeight - 2;
+			} else if (curWeight >= 3) {	// If the last time was a (streak of) mistake(s), but now it was correct, lower weight to 1
+				newWeight = 1;				// In this way you dont ever need to have it correct more than 4 times in a row. 
 			} else if (curWeight === 1) {
 				newWeight = 0.5;
 			} else if (curWeight === 0.5) {
@@ -200,6 +202,22 @@
 	}
 
 
+	// gets the current weight and outputs how many times the user was correct in a row, the correct streak. Used to display to user.
+	function getCorrectStreak(curWeight) {
+		let correctStreak;
+		if (curWeight === 1) {
+			return correctStreak = 1
+		} else if (curWeight === 0.5) {
+			return correctStreak = 2;
+		} else if (curWeight === 0.25) {
+			return correctStreak = 3;
+		} else if (curWeight === 0) {
+			return correctStreak = 4;
+		} else {
+			return correctStreak = 0;
+		}
+	}
+
 	// This is the main function, it handles what happens when text is inputted and enter is pressed. 
 	// Everything happens here. 
 	function handleBackEnd(userInput) {
@@ -212,56 +230,62 @@
 			// Do nothing with the userInput, only advance to the next question.
 			goToNextQuestion = true;
 			retype = false; // reset this bool
-			message = '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the correct answer . New weight = ' + currentEntry.weight;
+			message = '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the answer. <span style="color: red; font-weight: bold;"> Incorrect streak: ' + currentEntry.incorrectStreak;
+			console.log('print cur weight in retype')
+			console.log(currentEntry.weight)
 		} else { // normal operation
 		
 			if (userInput == currentEntry.answer.toLowerCase()) { // Correct answer
 				const wasMistake = false;
 				currentEntry.weight = getNewWeight(currentEntry.weight, wasMistake);
+				currentEntry.incorrectStreak = 0; // correct answer so the incorrect streak ends
 				
 				// When the weight is zero, it will not be asked again, let the user know
 				if (currentEntry.weight === 0) {
 					console.log('Correct! new weight = 0, NICE! You now know this one, it will not show up again');
-					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the correct answer! Weight = 0, NICE! You now know this one, it will not show up again. You now know ' + (nrOfZeros + 1).toString() + ' out of ' + dataset.length.toString() + ' answers by heart!';
+					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is correct!  Corect streak: <span style="color: green; font-weight: bold;">' + getCorrectStreak(currentEntry.weight) + ' out of 4</span>. You now know this one, it will not show up again. You now know ' + (nrOfZeros + 1).toString() + ' out of ' + dataset.length.toString() + ' answers by heart!';
 				} else {
 					console.log('Correct! new weight = ' + currentEntry.weight);
-					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the correct answer! New weight = ' + currentEntry.weight;
+					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is correct! Correct streak: <span style="color: green; font-weight: bold;">' + getCorrectStreak(currentEntry.weight) + ' out of 4</span>.';
 				}
 				points += 1; // update this part of the score
 				// asked. It is used to display the score
 				goToNextQuestion = true;
 				totalAsked += 1 // When correct or skipped the totalAsked goes up
-			} else if (userInput == 's') { // If 's'; skip this question
+			} else if (userInput == 's') { // If 's'; skip this question = a mistake
 				const wasMistake = true;
 				currentEntry.weight = getNewWeight(currentEntry.weight, wasMistake);
+				currentEntry.incorrectStreak += 1; // a mistake so 1 more in the incorrect streak.
 				goToNextQuestion = true;
 				// Only when asking NEW questions the latestMistakesIndexes array should be updated, else it would keep asking wrong questions again
 				if (fase === 0){ 
 					latestMistakeIndexes.push(curIndex) // Add the mistake index to the list of latest mistakes
 				}
 				totalAsked += 1 // When correct or skipped the totalAsked goes up
-				message = 'Show: <span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the correct answer. New weight = ' + currentEntry.weight;
+				message = 'Show: <span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the answer. <span style="color: red; font-weight: bold;"> Incorrect streak: ' + currentEntry.incorrectStreak;
 			// When sr is the input, it counts as a mistake for the points and the user may retype but the retyping is not checked.
 			} else if (userInput == 'sr') { 
 				const wasMistake = true;
 				currentEntry.weight = getNewWeight(currentEntry.weight, wasMistake);
+				currentEntry.incorrectStreak += 1; // a mistake so 1 more in the incorrect streak.
 				// Only when asking NEW questions the latestMistakesIndexes array should be updated, else it would keep asking wrong questions again
 				if (fase === 0){ 
 					latestMistakeIndexes.push(curIndex) // Add the mistake index to the list of latest mistakes
 				}
-				message = 'You may now retype to practice, this is not checked. \n\n<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> was the correct answer. New weight = ' + currentEntry.weight;
+				tempMessage = 'You may now retype to practice, this is not checked. \n\n<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is the answer. <span style="color: red; font-weight: bold;"> Incorrect streak: ' + currentEntry.incorrectStreak; 
+				// message = 'You may now retype to practice, this is not checked. \n\n<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is the answer. <span style="color: red; font-weight: bold;"> Incorrect streak: ' + currentEntry.incorrectStreak;
 				retype = true;
 				totalAsked += 1 // When correct or skipped the totalAsked goes up
-			// when 0 is entered. Set the weight to zero so that it will not be asked again. 
-			} else if (userInput == '0') {
+			// when d is entered. Set the weight to zero so that it will not be asked again. d for don't ask again.
+			} else if (userInput == 'd') {
 				currentEntry.weight = 0;
 				goToNextQuestion = true;
-				message = 'Weight set to 0, it will not be asked again';
+				message = 'This question will not be asked again, when you know it, you know it';
 			}
 			 else { // Now the answer was incorrect, it will be asked again without effecting the score
 				lastQuestion = '';
 				// now value (what the user has entered) is used instead of userInput because it should not be put to lowercase.
-				message = '<span style="color: red; font-weight: bold;">' + value + '</span> was incorrect, you may try again';
+				message = '<span style="color: red; font-weight: bold;">' + value + '</span> is incorrect, you may try again';
 			}
 		}
 		if (goToNextQuestion){
@@ -288,7 +312,7 @@
 						if (notYetAsked.length === 0){
 							fase = 3; // Go to askRandom fase
 							count = 1;
-							tempMessage = 'All questions have been asked once, now questions will be picked based on their weight'
+							tempMessage = allAlreadyAskedMessage;
 						} else {
 							// message the user that 6 NEW questions or less are comming. 
 							tempMessage = newQuestionsMessage;
@@ -306,7 +330,7 @@
 					if (notYetAsked.length === 0){
 						fase = 3; // Go to askRandom fase
 						count = 1;
-						tempMessage = 'All questions have been asked once, now questions will be picked based on their weight'
+						tempMessage = allAlreadyAskedMessage;
 					} else {
 						const nextIndex = getRandomInt(0, notYetAsked.length -1)
 						// Go to the next question that has not been asked before
@@ -326,7 +350,7 @@
 					if (notYetAsked.length === 0){
 						fase = 3; // Go to askRandom fase
 						count = 1;
-						tempMessage = 'All questions have been asked once, now questions will be picked based on their weight'
+						tempMessage = allAlreadyAskedMessage;
 					} else { // Ask a NEW question
 						// message the user that 5 NEW questions or less are comming. 
 						tempMessage = newQuestionsMessage;
@@ -358,7 +382,7 @@
 				const sumWeights = weights.reduce((sum, weight) => sum + weight, 0);
 				if (sumWeights === 0) {
 					finished = true;
-					endMessage = 'Congratulations! You did it! All have been learned. Hit restart, or refresh the page to select a new set of questions and continue learning!'	
+					endMessage = 'Congratulations! You did it! All have been learned. Hit the button at the bottom, or refresh the page to select a new set of questions and continue learning!<br>Our advice: Do this set again (a week?) later to really stack it in your long term memory!'; 	
 				// random sample a new curIndex and with it a new question. 
 				} else {
 					curIndex = getWeightedSample(alreadyAsked,weights)
@@ -559,7 +583,7 @@
 <!-- Only show the intro text and dataset selector dropdown at the start in pageFase 0-->
 {#if pageFase == 0}  
 	<p>
-		This website makes it possible to learn any set of facts by heart! The current offering is small but this will grow over time. Here you can interactively learn a ton about AI, and learn the capitals of the world in a way that makes sure you remember most of it! Much more effective than just reading! You will be asked a question, when you do not know the answer you have a chance to learn from seeing the answer. And you wil be tested later again to see whether you know it by heart. The questions are chosen at random but they have a weight associated with it. The higher the weight the greater the chance it wil be asked again. When you answer correctly the weight goes down and when you answer incorrectly the weight goes up. The goal is to reduce the weight of all the questions to 0 so that you have demonstrated that today you know it all by heart. It works wonders for remembering, but memory can fade so we invite you to try again some time later!   
+		This website makes it possible to learn any set of facts by heart! The current offering is small but this will grow over time. Here you can interactively learn a ton about AI, and learn the capitals of the world in a way that makes sure you remember most of it! Much more effective than just reading! You will be asked a set of questions and you can continue until you show that today you know them all by heart. Let's train the mind!    
 	</p>
 	<!-- <select on:change={handleDatasetChange} class="select-wrapper">
 		<option value=0>Click here to select a subject</option>
@@ -585,7 +609,7 @@
 <!-- After the dropdown has been used to select the dataset, ask the user for the start and stop indexes.  -->
 {#if pageFase == 1}
 <p>You have chosen the {datasetNamesAndIndexes[selectedOption][0]} set. <br>
-	This works with repetition until you know the answers by heart, you are encouraged to continue until all weights are 0. To keep it fun we advise you to do around 10 questions per go.
+	To keep it fun we advise you to do around 10 questions per go.
 	For example from 1 to 10 or 11 to 20. Please select at which question to start and at which to end in the dropdowns.  
 </p>
 
@@ -626,7 +650,8 @@ the start index is never higher or the same as the stopindex.:) -->
 
 {#if pageFase == 2}
 <p>
-	Use enter to submit an answer. When you do not know the answer, enter 'sr' to show and retype for practice. Or 's' for show without retyping. When you already know an answer and do not want it to come back again later, enter '0' to set its weight to 0. That is the fast way, or simply use the buttons. NOTE: below the question you can learn more about the previous question!
+	<strong>Goal</strong>: Answer each question correctly 4 times in a row. <br>
+	<strong>How to learn even faster</strong>: Use these shortcuts instead of the buttons: Enter to submit an answer. When you do not know the answer, enter 'sr' to show and retype for practice. Or 's' for show without retyping. When you already know an answer and do not want it to come back again later, enter 'd' for don't ask again. That is the fast way, or simply use the buttons.
 </p>
   
 
@@ -635,15 +660,9 @@ the start index is never higher or the same as the stopindex.:) -->
 	inside the Points component -->
     <Points bind:this={pointsInstance} points={points} totalAsked={totalAsked}/>
 	<!-- Show the current question unless we are finshed-->
-	{#if message != ''}
-	<p>
-		{lastQuestion}<br><br>
-		{@html message.replace('\n', '<br>')}<br>
-	</p>
-	{/if}
 	{#if tempMessage != ''}
 	<p>
-		{tempMessage}
+		{@html tempMessage.replace('\n', '<br>')}<br>
 	</p>
 	{/if}
 
@@ -669,27 +688,38 @@ the start index is never higher or the same as the stopindex.:) -->
 		<button on:click={handleOnSubmit} class="custom-button-besides-input">Submit</button>
 	  </div>
 	  <div class="button-container">
-		<button on:click={() => handleBackEnd("s")} class="custom-button-besides-input">Show</button>
-	  </div>
-	  <div class="button-container">
 		<button on:click={() => handleBackEnd("sr")} class="custom-button-besides-input">Show & Retype</button>
 	  </div>
 	  <div class="button-container">
-		<button on:click={() => handleBackEnd("0")} class="custom-button-besides-input">Set to 0</button>
+		<button on:click={() => handleBackEnd("s")} class="custom-button-besides-input">Show</button>
+	  </div>
+	  <div class="button-container">
+		<button on:click={() => handleBackEnd("d")} class="custom-button-besides-input">Don't ask again</button>
 	  </div>
 	</div>
   {/if}
 	{#if finished == true}
 	<p>
-		{endMessage}
+		{@html endMessage}
 	</p>
 	{/if}
-	{#if started == true && showPrevContext == true} 
-	<p class=more-info>
-		<strong>More info on the previous one</strong><br><br>
-		{@html lastContext}
-		
-	</p>
+	<!-- display stuff about the previous question but not when the set is finished  -->
+	{#if finished == false}
+		<!-- TODO fixen dat de space boven de incorrect input van de user weg gaat, dat komt nu door de lege lastquestion die wel 2x <br> krijgt -->
+		{#if message != ''}
+		<p>
+			{lastQuestion}<br><br>
+			{@html message.replace('\n', '<br>')}<br>
+		</p>
+		{/if}
+
+		{#if started == true && showPrevContext == true} 
+		<p class=more-info>
+			<strong>More info on the previous one</strong><br><br>
+			{@html lastContext}
+			
+		</p>
+		{/if}
 	{/if}
 
 	<button on:click={handleRestart} class="custom-button">
