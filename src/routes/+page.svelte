@@ -576,7 +576,13 @@
 		background-color: #ff7700;
 	}
 
-
+	#congratzimg {
+  		display: block;
+		/* puts it in the middle */
+  		/* margin-left: auto; */
+  		/* margin-right: auto; */
+		width: 50%;
+	}	
 
 </style>
 
@@ -661,48 +667,49 @@ the start index is never higher or the same as the stopindex.:) -->
 	inside the Points component -->
     <Points bind:this={pointsInstance} points={points} totalAsked={totalAsked} set_Length={dataset.length}/>
 	<!-- Show the current question unless we are finshed-->
-	{#if tempMessage != ''}
-	<p>
-		{@html tempMessage.replace('\n', '<br>')}<br>
-	</p>
-	{/if}
-
+	
 	{#if finished == false}
-	<p class='currentQuestion'>
-		{dataset[curIndex].question}
-	</p>
-	{/if}
+
+		{#if tempMessage != ''}
+		<p>
+			{@html tempMessage.replace('\n', '<br>')}<br>
+		</p>
+		{/if}
+
+		<p class='currentQuestion'>
+			{dataset[curIndex].question}
+		</p>
 	<!-- This form submits on enter or one of the buttons. It gets text input
 	from the user. preventDefault makes sure that when input is given, the 
 	page does not reset to the top of the page. Before adding that it skips you
 	to the top of the page when hitting enter. Not anymore. Great :) -->
 	<!-- To stop showing the form at the end, it is surounded by an if.  -->
-	{#if finished == false}
-	<div class="form-container">
-	  <form on:submit|preventDefault={handleOnSubmit}>
-		<label>
-		  Your answer:
-		  <input bind:value />
-		</label>
-	  </form>
-	  <div class="button-container">
-		<button on:click={handleOnSubmit} class="custom-button-besides-input">Submit</button>
-	  </div>
-	  <div class="button-container">
-		<button on:click={() => handleBackEnd("sr")} class="custom-button-besides-input">Show & Retype</button>
-	  </div>
-	  <div class="button-container">
-		<button on:click={() => handleBackEnd("s")} class="custom-button-besides-input">Show</button>
-	  </div>
-	  <div class="button-container">
-		<button on:click={() => handleBackEnd("d")} class="custom-button-besides-input">Don't ask again</button>
-	  </div>
-	</div>
-  {/if}
+		<div class="form-container">
+		<form on:submit|preventDefault={handleOnSubmit}>
+			<label>
+			Your answer:
+			<input bind:value />
+			</label>
+		</form>
+		<div class="button-container">
+			<button on:click={handleOnSubmit} class="custom-button-besides-input">Submit</button>
+		</div>
+		<div class="button-container">
+			<button on:click={() => handleBackEnd("sr")} class="custom-button-besides-input">Show & Retype</button>
+		</div>
+		<div class="button-container">
+			<button on:click={() => handleBackEnd("s")} class="custom-button-besides-input">Show</button>
+		</div>
+		<div class="button-container">
+			<button on:click={() => handleBackEnd("d")} class="custom-button-besides-input">Don't ask again</button>
+		</div>
+		</div>
+  	{/if}
 	{#if finished == true}
 	<p>
 		{@html endMessage}
 	</p>
+	<img id="congratzimg" src="images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>
 	{/if}
 	<!-- display stuff about the previous question but not when the set is finished  -->
 	{#if finished == false}
