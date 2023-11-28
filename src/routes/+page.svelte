@@ -243,7 +243,8 @@
 				// When the weight is zero, it will not be asked again, let the user know
 				if (currentEntry.weight === 0) {
 					console.log('Correct! new weight = 0, NICE! You now know this one, it will not show up again');
-					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is correct!  Corect streak: <span style="color: green; font-weight: bold;">' + getCorrectStreak(currentEntry.weight) + ' out of 4</span>. You now know this one, it will not show up again. You now know ' + (nrOfZeros + 1).toString() + ' out of ' + dataset.length.toString() + ' answers by heart!';
+					pointsInstance.setQuestionsLearned(nrOfZeros + 1, dataset.length);
+					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is correct!  Corect streak: <span style="color: green; font-weight: bold;">' + getCorrectStreak(currentEntry.weight) + ' out of 4</span>. <span style="color: #ff7700; font-weight: bold;">You now know this one, it will not show up again.</span>';
 				} else {
 					console.log('Correct! new weight = ' + currentEntry.weight);
 					message =  '<span style="color: green; font-weight: bold;">' + currentEntry.answer + '</span> is correct! Correct streak: <span style="color: green; font-weight: bold;">' + getCorrectStreak(currentEntry.weight) + ' out of 4</span>.';
@@ -403,26 +404,26 @@
 			console.log('fase at the end = %d',fase)
 		}
 
-		pointsInstance.setProcent(points,totalAsked); // Update the score
+		pointsInstance.setScores(points,totalAsked); // Update the score
+		pointsInstance.setQuestionsLearned(nrOfZeros, dataset.length);
 		value = ''; // reset the text in the input window to blank
 		
 	}
 		
 	function handleRestart(){
-
-		pageFase = 0;
+		pageFase = 0; // transition to the start page
+		points = 0;
+		totalAsked = 0;
+		pointsInstance.setScores(points,totalAsked); // Update the score to 0 for the procent value
 		lastQuestion = '';
 		lastContext = '';
 		startIndex = 1;
 		stopIndex = 10;
-		points = 0;
-		totalAsked = 0;
 		started = false; // used to show or not show the intro text.
 		message = '';
 		finished = false;
 		showPrevContext = false;
 		curIndex = 0; // used to know what question to ask. 
-		pointsInstance.setProcent(points,totalAsked); // Update the score to 0 for the procent value
 		// Used for the user input, also to display it. 
 		userInput = '';
 		value = '';	
@@ -658,7 +659,7 @@ the start index is never higher or the same as the stopindex.:) -->
 <div class = '+page'>
 	<!-- On the top,show the points. bind:this={pointsInstance}  is put in there to be able to call the setProcent function
 	inside the Points component -->
-    <Points bind:this={pointsInstance} points={points} totalAsked={totalAsked}/>
+    <Points bind:this={pointsInstance} points={points} totalAsked={totalAsked} set_Length={dataset.length}/>
 	<!-- Show the current question unless we are finshed-->
 	{#if tempMessage != ''}
 	<p>
