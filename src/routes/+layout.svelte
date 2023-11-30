@@ -1,5 +1,6 @@
 <script>
 	import '../app.css'
+	import Footer from './footer.svelte'
 
 </script>
 
@@ -15,4 +16,5 @@
 	</main>
 
 	<!-- <Footer /> -->
+	<Footer />
 </div>

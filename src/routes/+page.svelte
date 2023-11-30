@@ -383,7 +383,7 @@
 				const sumWeights = weights.reduce((sum, weight) => sum + weight, 0);
 				if (sumWeights === 0) {
 					finished = true;
-					endMessage = 'Congratulations! You did it! All have been learned. Hit the button at the bottom, or refresh the page to select a new set of questions and continue learning!<br>Our advice: Do this set again (a week?) later to really stack it in your long term memory!'; 	
+					endMessage = 'Congratulations! You did it! All have been learned. Hit the button at the bottom, or refresh the page to select a new set of questions and continue learning!<br>Our advice: Do this set again later to really stack it in your long term memory! For example tommorow and one week later.'; 	
 				// random sample a new curIndex and with it a new question. 
 				} else {
 					curIndex = getWeightedSample(alreadyAsked,weights)
@@ -709,7 +709,10 @@ the start index is never higher or the same as the stopindex.:) -->
 	<p>
 		{@html endMessage}
 	</p>
-	<img id="congratzimg" src="images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>
+	<!-- Dit werkte niet met netlify, toen de image in het project was included in the images Folder. Wel locally  -->
+	<!-- <img id="congratzimg" src="images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>  -->
+	<!-- Nu hosting the image on alex's VPS on alexhisbuilds.com  -->
+	<img id="congratzimg" src="http://www.alexhisbuilds.com/images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>
 	{/if}
 	<!-- display stuff about the previous question but not when the set is finished  -->
 	{#if finished == false}
