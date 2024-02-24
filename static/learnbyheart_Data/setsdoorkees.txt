@@ -1,0 +1,37 @@
+subset;Inwerken marktkraam
+Wie heeft de grootste ballen van het bedrijf?;Kees;Ze wegen kilo's echt waar man.
+Wat zegt een noot als hij thuiskomt?;Cashew!;Cashewnoten worden voornamelijk geproduceerd in Brazilië, Vietnam, India en enkele Afrikaanse landen.
+Hoe noem je een notenallergie op de markt?;Pecanniet;Pecannoten zijn vooral populair in de Verenigde Staten, waar ze oorspronkelijk vandaan komen.
+Waarom zijn noten goede geheimhouders?;Stilte;Noten worden vaak geprezen voor hun vermogen om gezonde vetten te leveren, essentieel voor ons brein.
+Wat is de favoriete dans van noten?;Walst;De wals is een dans die perfect past bij de elegante vorm van de walnoot.
+Hoe begroet een noot een ander?;Amandag;Amandelen zijn rijk aan vitamine E, wat goed is voor de huid en het hart.
+Wat zei de ene noot tegen de ander in de winter?;Koud he?;Tijdens de wintermaanden worden noten vaak gebruikt in gerechten om extra energie te leveren.
+Hoe noem je een verdrietige noot?;Snikkel;Pinda's (technisch gezien peulvruchten, maar vaak gecategoriseerd met noten) zijn een bron van eiwitten.
+Wat is een noot op dieet?;Afslanker;Noten bevatten vezels die kunnen helpen bij gewichtsbeheer door een vol gevoel te geven.
+Hoe noem je een noot zonder huis?;Dakloos;Cashewnoten worden soms "dakloos" genoemd vanwege hun unieke groeiwijze, waarbij de noot buiten de vrucht hangt.
+Wat is de lievelingsplek van een noot?;Markt;De markt is een traditionele plaats waar noten vers en in bulk verkocht worden.
+Waarom kunnen noten goed rekenen?;Pienter;Noten bevatten mineralen zoals magnesium, die bijdragen aan de hersenfunctie.
+Wat draagt een noot naar een feestje?;Smoking;Een "smoking" referentie kan humoristisch wijzen op de luxe status die sommige noten hebben in de culinaire wereld.
+Hoe noem je een noot in de ruimte?;Astronoot;Astronautenvoedsel heeft vaak noten als ingrediënt vanwege hun voedingswaarde en lange houdbaarheid.
+Wat doen noten tijdens de spits?;Oponthoud;Tijdens de spits op de markt kunnen noten ervoor zorgen dat klanten even stilstaan bij hun kraam.
+Wat is de lievelingssport van een notenverkoper?;Kraken;De "Kraker" kan verwijzen naar de noodzaak van een notenkraker om sommige noten te openen.
+
+subset;Inwerken webshop
+Wie heeft de grootste ballen van het bedrijf?;Kees;Ze wegen kilo's echt waar man.
+Wat zegt een noot als hij thuiskomt?;Cashew!;Cashewnoten worden voornamelijk geproduceerd in Brazilië, Vietnam, India en enkele Afrikaanse landen.
+Hoe noem je een notenallergie op de markt?;Pecanniet;Pecannoten zijn vooral populair in de Verenigde Staten, waar ze oorspronkelijk vandaan komen.
+Waarom zijn noten goede geheimhouders?;Stilte;Noten worden vaak geprezen voor hun vermogen om gezonde vetten te leveren, essentieel voor ons brein.
+Wat is de favoriete dans van noten?;Walst;De wals is een dans die perfect past bij de elegante vorm van de walnoot.
+Hoe begroet een noot een ander?;Amandag;Amandelen zijn rijk aan vitamine E, wat goed is voor de huid en het hart.
+Wat zei de ene noot tegen de ander in de winter?;Koud he?;Tijdens de wintermaanden worden noten vaak gebruikt in gerechten om extra energie te leveren.
+Hoe noem je een verdrietige noot?;Snikkel;Pinda's (technisch gezien peulvruchten, maar vaak gecategoriseerd met noten) zijn een bron van eiwitten.
+Wat is een noot op dieet?;Afslanker;Noten bevatten vezels die kunnen helpen bij gewichtsbeheer door een vol gevoel te geven.
+Hoe noem je een noot zonder huis?;Dakloos;Cashewnoten worden soms "dakloos" genoemd vanwege hun unieke groeiwijze, waarbij de noot buiten de vrucht hangt.
+Wat is de lievelingsplek van een noot?;Markt;De markt is een traditionele plaats waar noten vers en in bulk verkocht worden.
+Waarom kunnen noten goed rekenen?;Pienter;Noten bevatten mineralen zoals magnesium, die bijdragen aan de hersenfunctie.
+Wat draagt een noot naar een feestje?;Smoking;Een "smoking" referentie kan humoristisch wijzen op de luxe status die sommige noten hebben in de culinaire wereld.
+Hoe noem je een noot in de ruimte?;Astronoot;Astronautenvoedsel heeft vaak noten als ingrediënt vanwege hun voedingswaarde en lange houdbaarheid.
+Wat doen noten tijdens de spits?;Oponthoud;Tijdens de spits op de markt kunnen noten ervoor zorgen dat klanten even stilstaan bij hun kraam.
+Wat is de lievelingssport van een notenverkoper?;Kraken;De "Kraker" kan verwijzen naar de noodzaak van een notenkraker om sommige noten te openen.
+
+
