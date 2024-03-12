@@ -1,22 +1,16 @@
 subset;Inwerken marktkraam
 Wie heeft de grootste ballen van het bedrijf?;Kees;Ze wegen kilo's echt waar man.
-Wat zegt een noot als hij thuiskomt?;Cashew!;Cashewnoten worden voornamelijk geproduceerd in Brazilië, Vietnam, India en enkele Afrikaanse landen.
-Hoe noem je een notenallergie op de markt?;Pecanniet;Pecannoten zijn vooral populair in de Verenigde Staten, waar ze oorspronkelijk vandaan komen.
-Waarom zijn noten goede geheimhouders?;Stilte;Noten worden vaak geprezen voor hun vermogen om gezonde vetten te leveren, essentieel voor ons brein.
-Wat is de favoriete dans van noten?;Walst;De wals is een dans die perfect past bij de elegante vorm van de walnoot.
-Hoe begroet een noot een ander?;Amandag;Amandelen zijn rijk aan vitamine E, wat goed is voor de huid en het hart.
-Wat zei de ene noot tegen de ander in de winter?;Koud he?;Tijdens de wintermaanden worden noten vaak gebruikt in gerechten om extra energie te leveren.
-Hoe noem je een verdrietige noot?;Snikkel;Pinda's (technisch gezien peulvruchten, maar vaak gecategoriseerd met noten) zijn een bron van eiwitten.
-Wat is een noot op dieet?;Afslanker;Noten bevatten vezels die kunnen helpen bij gewichtsbeheer door een vol gevoel te geven.
+Wat was het gewicht van de grootste noot ter wereld?;42 kilogram;De Kokosnoot van de Coco de Mer palm voor je weegt maar liefst dertig kilo. Hij heeft een diameter van bijna de halve meter. Een skippybal. En dan te bedenken dat de grootste noot ooit gevonden op het eiland niet minder woog dan 42 kilogramDe kokosnoot van de Coco de Mer palm voor je weegt maar liefst dertig kilo. Hij heeft een diameter van bijna de halve meter. Een skippybal. En dan te bedenken dat de grootste noot ooit gevonden op het eiland niet minder woog dan 42 kilogram
+Welke vloeistof in het lichaam werd aantoonbaar gezonder van het eten van noten?;Sperma;Spaans onderzoek in juli 2018 wees uit dat mannen die twee handjes noten per dag eten, een betere kwaliteit sperma krijgen. In dit experiment van 14 weken aten 60 mannen wél en 60 mannen níet dagelijks noten. Bij de noten-eters werden na deze 14 weken een toenamen in beweeglijkheid en snelheid van de zaadcellen vastgesteld.Kan iemand met een noten allergie dood gaan aan noten eten? 
 Hoe noem je een noot zonder huis?;Dakloos;Cashewnoten worden soms "dakloos" genoemd vanwege hun unieke groeiwijze, waarbij de noot buiten de vrucht hangt.
-Wat is de lievelingsplek van een noot?;Markt;De markt is een traditionele plaats waar noten vers en in bulk verkocht worden.
-Waarom kunnen noten goed rekenen?;Pienter;Noten bevatten mineralen zoals magnesium, die bijdragen aan de hersenfunctie.
-Wat draagt een noot naar een feestje?;Smoking;Een "smoking" referentie kan humoristisch wijzen op de luxe status die sommige noten hebben in de culinaire wereld.
 Hoe noem je een noot in de ruimte?;Astronoot;Astronautenvoedsel heeft vaak noten als ingrediënt vanwege hun voedingswaarde en lange houdbaarheid.
-Wat doen noten tijdens de spits?;Oponthoud;Tijdens de spits op de markt kunnen noten ervoor zorgen dat klanten even stilstaan bij hun kraam.
 Wat is de lievelingssport van een notenverkoper?;Kraken;De "Kraker" kan verwijzen naar de noodzaak van een notenkraker om sommige noten te openen.
+Welke noot gebruikte men om meubels weer te laten glanzen?;Walnoot;Een ouderwetse methode om houten meubels weer te laten glazen, is door het opwrijven met walnoten. Walnoten bevatten namelijk een soort olieachtige vloeistof, waardoor meubels weer gaan glazen. Door te wrijven met een walnoot, kun je ook vochtkringen op een houten tafel verwijderen (of minder zichtbaar maken).
+Welk dier maarkt gaatjes in hazelnoten?;Hazelnootboorder;Ha, wist je dat als er een heel klein gaatje in de hazelnoot zit dat je ‘m dan beter kunt weggooien? Zo’n gat verraadt namelijk dat er een ‘hazelnootboorder (=kever)’ aan het werk is geweest. Deze kever legt namelijk binnenin de noot eitjes, zodat de larven van deze onrijpe noot kunnen eten. Door deze kleine gaatjes kruipen ze naar buiten en laten ze een lege noot achtergaatje in hazelnoot. Net als alle kevers, heeft ook de hazelnootboorder een volledige gedaanteverwisseling. De vrouwtjes zetten de eitjes alleen af in jonge hazelnoten, de wand is dan namelijk nog lekker zacht. Vervolgens boort ze eerst een gaatje uit de noot met scherpe tanden aan het sluitpunt. Vervolgens legt ze een ei, dit is er vaak 1, maar kunnen er ook meer zijn. 8 tot 10 dagen later kruipt de larf uit het ei en eet zich een weg door de noot. Hierdoor ontstaat een holte en is de noot onverkoopbaar voor handelaren. Larven ondergaan een aantal vervellingen, waarbij ze uiteindelijk de lengte van 15 millimeter bereiken.
+Welk volk speelde een soort knikkeren met noten?:Romeinen;In de Romeinse tijd speelde kinderen vaak spelletjes met noten. Het waren een soort knikkerspelletjes. Het spelen met noten werd vooral algemeen gedaan waardoor noten werden geassocieerd met de kindertijd. Het gezegde ‘relinquere noces’, met andere woorden: ‘de noten achter zich laten’ betekent dan ook dat iemand geen kind meer is.
+Welke pitten noemt men vergeten noten?;Pijnboompitten;Pijnboompitten bevinden zich in de schubben van dennenappels die je in de herfst bij dennenbomen in de buurt ziet liggen. Ze zijn ook gezond want ze bevatten onder andere vitamine E en K, magnesium en ijzer. Je kan ze zo of geroosterd eten, of verwerken in een salade. Er wordt natuurlijk ook pesto van gemaakt.
 
-subset;Inwerken webshop
+subset;Inwerken webshop (AI verzonnen)
 Wie heeft de grootste ballen van het bedrijf?;Kees;Ze wegen kilo's echt waar man.
 Wat zegt een noot als hij thuiskomt?;Cashew!;Cashewnoten worden voornamelijk geproduceerd in Brazilië, Vietnam, India en enkele Afrikaanse landen.
 Hoe noem je een notenallergie op de markt?;Pecanniet;Pecannoten zijn vooral populair in de Verenigde Staten, waar ze oorspronkelijk vandaan komen.
