@@ -712,7 +712,7 @@ the start index is never higher or the same as the stopindex.:) -->
 	<!-- Dit werkte niet met netlify, toen de image in het project was included in the images Folder. Wel locally  -->
 	<!-- <img id="congratzimg" src="images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>  -->
 	<!-- Nu hosting the image on alex's VPS on alexhisbuilds.com  -->
-	<img id="congratzimg" src="http://www.alexhisbuilds.com/images/goodjobchamp.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>
+	<img id="congratzimg" src="https://res.cloudinary.com/dj4sbkmz7/image/upload/v1710262940/goodjobchamp_vbdnrd.png" alt="cool looking brain with strong arms that says good job champ, you are training your mind to be like me"/>
 	{/if}
 	<!-- display stuff about the previous question but not when the set is finished  -->
 	{#if finished == false}
