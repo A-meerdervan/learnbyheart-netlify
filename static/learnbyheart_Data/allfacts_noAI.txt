@@ -1,0 +1,219 @@
+subset;Leren over bijen
+
+Hoeveel duizend kilometer moeten bijen gezamenlijk vliegen om 450 gram honing te maken?;89; Een volk heeft tienduizenden bijen, samen vliegen ze zoveel. Dit is meer dan 2 maal een rondje om de aarde! Ze verzamelen voor die 450 gram honing nectar van ongeveer twee miljoen bloemen. Dit toont aan hoe efficiënt en hardwerkend deze insecten zijn om ons van honing te voorzien. <a href="​https://www.buzzaboutbees.net/honey-bee-facts.html">Source</a>.
+
+Hoeveel theelepels honing maakt een enkele werkbij in haar leven?;1/12;Deze kleine hoeveelheid weerspiegelt de enorme collectieve inspanning van de hele kolonie om voldoende honing te produceren voor hun overleving en onze consumptie. In een pot van 370 ml honing zit het levenswerk van 888.  <a href="​https://www.buzzaboutbees.net/honey-bee-facts.html">Source</a>.
+
+Wat doen mannelijke honingbijen (darren) na het paren?;Sterven;De mannen, de darren hebben als levensdoel om te paren met de koningin. Zodra dat gelukt is hebben ze geen nut meer voor de groep en zouden anders alleen maar eten opeten die de werkster bijen hebben verzameld. <a href="​https://www.buzzaboutbees.net/honey-bee-facts.html">Source</a>.
+
+Er zijn speciale bijen die bloemen zoeken en dan aan de rest van de kolonie vertellen waar ze zijn met een soort dans. Hoe heet deze dans in het engels?;Waggle dance;Honingbijen gebruiken de "waggle dance" om hun nestgenoten te informeren over de locatie van voedselbronnen en meer nuttige doelen. De waggle dance wordt gedaan wanneer een groep bloemen meer dan 40 meter weg is van het bijennest. Deze dans geeft de richting en afstand aan van bloemen die nectar en pollen bevatten. Ook vertelt de dans hoeveel lekkers er te halen is op die locatie. Het ontcijferen van deze dans is het levenswerk geweest van Karl von Frisch. Hij heeft ook een nobelprijs gekregen. Bijen kunnen dus een soort van praten met lichaamstaal, een soort dans, en dit zorgt ervoor dat er niet duizenden bijen uren lang de verkeerde kant op vliegen. Dat zou zonde zijn van hun energie. <a href="​https://www.buzzaboutbees.net/honey-bee-facts.html">Source</a>.
+ 
+Hoeveel paar vleugels heeft een bij?;2;2 paar vleugels betekent dus 4 losse vleugels in totaal. De twee paar vleugels helpen hen efficiënt te vliegen en stuifmeel te verzamelen van bloemen. Ze kunnen hun voor- en achtervleugels aan elkaar koppelen om een groter oppervlak te creëren tijdens de vlucht​.  <a href="​https://www.buzzaboutbees.net/bees-quiz-answers.html">Source</a>. 
+
+Hoeveel maanden is de gemiddelde levensduur van een werksterbij in de lente en zomer?;1,5;Werksterbijen leven meestal twee tot zes weken tijdens de drukke lente- en zomermaanden, waarin ze hard werken om voedsel te verzamelen en de kolonie te ondersteunen​. <a href="​https://www.buzzaboutbees.net/bees-quiz-answers.html">Source</a>. 
+
+Hoeveel ogen heeft een bij?;5;Bijen hebben vijf ogen, bestaande uit twee grote samengestelde ogen en drie kleine enkelvoudige ogen (ocelli), die hen helpen bij het navigeren en detecteren van lichtintensiteit​. <a href="​https://www.buzzaboutbees.net/bees-quiz-answers.html">Source</a>. 
+
+Wat is de rol van darren in een bijenkolonie?;Paren;Darren zijn mannelijke bijen die uitsluitend bedoeld zijn om met de koningin te paren. Na de paring sterven ze direct, omdat hun taak is volbracht​. <a href="https://www.thoughtco.com/fascinating-facts-about-honey-bees-4165293">Source</a> 
+
+Wat doen bijna alle honingbijen, werksters, nadat ze een mens hebben gestoken?;Sterven;Wanneer een honingbij een mens steekt, blijft haar angel achter in de huid, samen met een deel van haar buik, gifklier en zenuwuiteinden. Dit resulteert in een fatale verwonding voor de bij, waardoor ze sterft kort na het steken​. Wel is het zo dat veel andere bijen zoals hommels meerdere keren kunnen steken, maar honingbijen hebben pech! <a href="https://learnbees.com/facts-about-bees/">Source</a>.
+
+Hoeveel koninginnen zijn er meestal in een bijenkolonie?;1;Een bijenkolonie heeft meestal maar één koningin. Ze is verantwoordelijk voor het leggen van eieren en het reguleren van de kolonie. Als de koningin sterft of te oud wordt, kiezen de werkbijen een nieuwe normale werkster larve om te transformeren en op te voeden tot koningin​.
+
+subset;Capitals of South Amerika
+
+What is the capital of Argentina?;Buenos Aires;
+What is the capital of Bolivia?;Sucre;
+What is the capital of Brazil?;Brasilia;
+What is the capital of Chile?;Santiago;
+What is the capital of Colombia?;Bogota;
+What is the capital of Ecuador?;Quito;
+What is the capital of French Guiana?;Cayenne;
+What is the capital of Guyana?;Georgetown;
+What is the capital of Paraguay?;Asuncion;
+What is the capital of Peru?;Lima;
+What is the capital of Suriname?;Paramaribo;
+What is the capital of Uruguay?;Montevideo;
+What is the capital of Venezuela?;Caracas;
+subset;Capitals of North & Central Amarika & the Caribean
+What is the capital of El Salvador?;San Salvador;
+What is the capital of Guatemala?;Guatemala;
+What is the capital of Antigua and Barbuda?;Saint John's;
+What is the capital of The Bahamas;Nassau;
+What is the capital of Barbados?;Bridgetown;
+What is the capital of Belize?;Belmopan;
+What is the capital of Canada?;Ottawa;
+What is the capital of Cuba?;Havana;
+What is the capital of Costa Rica?;San Jose;
+What is the capital of Dominica?;Roseau;
+What is the capital of The Dominican Republic?;Santo Domingo;
+What is the capital of Grenada?;Saint George's;
+What is the capital of Haiti?;Port-au-Prince;
+What is the capital of Honduras?;Tegucigalpa;
+What is the capital of Jamaica?;Kingston;
+What is the capital of Mexico?;Mexico City;
+What is the capital of Nicaragua?;Managua;
+What is the capital of Panama?;Panama City;
+What is the capital of Saint Kitts and Nevis?;Basseterre;
+What is the capital of Saint Lucia?;Castries;
+What is the capital of Saint Vincent and the Grenadines?;Kingstown;
+What is the capital of Trinidad and Tobago?;Port-of-Spain;
+What is the capital of The United States of America?;Washington D.C.;
+subset;Capitals of Europe
+What is the capital of Albania?;Tirana;
+What is the capital of Andorra?;Andorra la Vella;
+What is the capital of Armenia?;Yerevan;
+What is the capital of Austria?;Vienna;
+What is the capital of Azerbaijan?;Baku;
+What is the capital of Belarus?;Minsk;
+What is the capital of Belgium?;Brussels;
+What is the capital of Bosnia and Herzegovina?;Sarajevo;
+What is the capital of Bulgaria?;Sofia;
+What is the capital of Croatia?;Zagreb;
+What is the capital of Cyprus?;Nicosia;
+What is the capital of Czechia?;Prague;
+What is the capital of Denmark?;Copenhagen;
+What is the capital of Estonia?;Tallinn;
+What is the capital of Finland?;Helsinki;
+What is the capital of France?;Paris;
+What is the capital of Georgia?;Tbilisi;
+What is the capital of Germany?;Berlin;
+What is the capital of Greece?;Athens;
+What is the capital of Hungary?;Budapest;
+What is the capital of Iceland?;Reykjavik;
+What is the capital of Ireland?;Dublin;
+What is the capital of Italy?;Rome;
+What is the capital of Kazakhstan?;Astana;
+What is the capital of Kosovo?;Pristina;
+What is the capital of Latvia?;Riga;
+What is the capital of Liechtenstein?;Vaduz;
+What is the capital of Lithuania?;Vilnius;
+What is the capital of Luxembourg?;Luxembourg;
+What is the capital of Malta?;Valletta;
+What is the capital of Moldova?;Chisinau;
+What is the capital of Monaco?;Monaco;
+What is the capital of Montenegro?;Podgorica;
+What is the capital of Netherlands?;Amsterdam;
+What is the capital of North Macedonia (formerly Macedonia)?;Skopje;
+What is the capital of Norway?;Oslo;
+What is the capital of Poland?;Warsaw;
+What is the capital of Portugal?;Lisbon;
+What is the capital of Romania?;Bucharest;
+What is the capital of Russia?;Moscow;
+What is the capital of San Marino?;San Marino;
+What is the capital of Serbia?;Belgrade;
+What is the capital of Slovakia?;Bratislava;
+What is the capital of Slovenia?;Ljubljana;
+What is the capital of Spain?;Madrid;
+What is the capital of Sweden?;Stockholm;
+What is the capital of Switzerland?;Bern;
+What is the capital of Turkey?;Ankara;
+What is the capital of Ukraine?;Kiev;
+What is the capital of United Kingdom?;London;
+What is the capital of Vatican City?;Vatican City;
+subset;Capitals of Asia and the m. east
+What is the capital of Afghanistan?;Kabul;
+What is the capital of Armenia?;Yerevan;
+What is the capital of Azerbaijan?;Baku;
+What is the capital of Bangladesh?;Dhaka;
+What is the capital of Bhutan?;Thimphu;
+What is the capital of Brunei?;Bandar Seri Begawan;
+What is the capital of Burma?;Rangoon;
+What is the capital of Bahrain?;Manama;
+What is the capital of Cambodia?;Phnom Penh;
+What is the capital of China?;Beijing;
+What is the capital of East Timor?;Dili;
+What is the capital of Gaza Strip?;None;
+What is the capital of Georgia?;Tbilisi;
+What is the capital of Hong Kong?;Hong Kong;
+What is the capital of India?;New Delhi;
+What is the capital of Indonesia?;Jakarta;
+What is the capital of Iran?;Tehran;
+What is the capital of Iraq?;Baghdad;
+What is the capital of Israel?;Jerusalem;
+What is the capital of Japan?;Tokyo;
+What is the capital of Jordan?;Amman;
+What is the capital of Kazakhstan?;Astana;
+What is the capital of North Korea?;P'yongyang;
+What is the capital of South Korea?;Seoul;
+What is the capital of Kuwait?;Kuwait;
+What is the capital of Kyrgyzstan?;Bishkek;
+What is the capital of Laos?;Vientiane;
+What is the capital of Macau?;Macau;
+What is the capital of Malaysia?;Kuala Lumpur;
+What is the capital of Maldives?;Male;
+What is the capital of Mongolia?;Ulaanbaatar;
+What is the capital of Nepal?;Kathmandu;
+What is the capital of Oman?;Muscat;
+What is the capital of Pakistan?;Islamabad;
+What is the capital of Papua New Guinea?;Port Moresby;
+What is the capital of Philippines?;Manila;
+What is the capital of Russia?;Moscow;
+What is the capital of Saudi Arabia?;Riyadh;
+What is the capital of Singapore?;Singapore;
+What is the capital of Sri Lanka?;Colombo;
+What is the capital of Syria?;Damascus;
+What is the capital of Taiwan?;Taipei;
+What is the capital of Tajikistan?;Dushanbe;
+What is the capital of Thailand?;Bangkok;
+What is the capital of Turkey?;Ankara;
+What is the capital of Turkmenistan?;Ashgabat;
+What is the capital of United Arab Emirates?;Abu Dhabi;
+What is the capital of Uzbekistan?;Tashkent;
+What is the capital of Vietnam?;Hanoi;
+What is the capital of Yemen?;Sanaa;
+subset;Capitals of Afrika
+What is the capital of Algeria?;Algiers;
+What is the capital of Angola?;Luanda;
+What is the capital of Benin?;Porto-Novo;
+What is the capital of Botswana?;Gaborone;
+What is the capital of Burkina Faso?;Ouagadougou;
+What is the capital of Burundi?;Bujumbura;
+What is the capital of Cameroon?;Yaounde;
+What is the capital of Cape Verde?;Praia;
+What is the capital of Central African Republic?;Bangui;
+What is the capital of Chad?;N'Djamena;
+What is the capital of Comoros?;Moroni;
+What is the capital of the Democratic Republic of Congo?;Kinshasa;
+What is the capital of the Republic of the Congo;Brazzaville;
+What is the capital of Cote d'Ivoire?;Yamoussoukro;
+What is the capital of Djibouti?;Djibouti;
+What is the capital of Egypt?;Cairo;
+What is the capital of Equatorial Guinea?;Malabo;
+What is the capital of Eritrea?;Asmara;
+What is the capital of Eswatini?;Lobamba;
+What is the capital of Ethiopia?;Addis Ababa;
+What is the capital of Gabon?;Libreville;
+What is the capital of The Gambia;Banjul;
+What is the capital of Ghana?;Accra;
+What is the capital of Guinea?;Conakry;
+What is the capital of Guinea-Bissau?;Bissau;
+What is the capital of Kenya?;Nairobi;
+What is the capital of Lesotho?;Maseru;
+What is the capital of Liberia?;Monrovia;
+What is the capital of Libya?;Tripoli;
+What is the capital of Madagascar?;Antananarivo;
+What is the capital of Malawi?;Lilongwe;
+What is the capital of Mali?;Bamako;
+What is the capital of Mauritania?;Nouakchott;
+What is the capital of Mauritius?;Port Louis;
+What is the capital of Morocco?;Rabat;
+What is the capital of Mozambique?;Maputo;
+What is the capital of Namibia?;Windhoek;
+What is the capital of Niger?;Niamey;
+What is the capital of Nigeria?;Abuja;
+What is the capital of Rwanda?;Kigali;
+What is the capital of Sao Tome and Principe?;Sao Tome;
+What is the capital of Senegal?;Dakar;
+What is the capital of Seychelles?;Victoria;
+What is the capital of Sierra Leone?;Freetown;
+What is the capital of Somalia?;Mogadishu;
+What is the capital of South Africa?;Cape Town;
+What is the capital of Sudan?;Khartoum;
+What is the capital of Tanzania?;Dar es Salaam;
+What is the capital of Togo?;Lome;
+What is the capital of Tunisia?;Tunis;
+What is the capital of Uganda?;Kampala;
+What is the capital of Western Sahara?;None;
+What is the capital of Zambia?;Lusaka;
+What is the capital of Zimbabwe?;Harare;

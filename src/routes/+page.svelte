@@ -42,7 +42,7 @@
 	const allAlreadyAskedMessage = 'All questions have been asked once, now the higher the incorrect streak, the more often it will be asked.'
 	let datasetsHaveLoaded = false;
 	// The file is at /static/learn.. but in svelte the static folder contents are available without having to start with /static 
-	let pathToData = 'learnbyheart_Data/allfacts.txt'
+	let pathToData = 'learnbyheart_Data/allfacts_noAI.txt'
 
 	let endMessage = 'You are at the end, the only option now is to hit restart or refresh the page for the same effect'
 
